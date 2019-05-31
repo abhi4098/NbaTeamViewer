@@ -2,14 +2,30 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.nbateamsactivity">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TeamsListActivity">
+        <activity android:name=".ui.TeamDetailsActivity"></activity>
+        <activity android:name=".ui.TeamsListActivity" />
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="nbaTeamsDatabase.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="21" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.example.nbateamsactivity.generated.tables.TeamListDatumTable,com.example.nbateamsactivity.generated.tables.PlayerTable,com.example.nbateamsactivity.testTables.TestPlayerTable,com.example.nbateamsactivity.testTables.TestTeamListDatumTable"/>
+
+        <activity android:name=".ui.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
