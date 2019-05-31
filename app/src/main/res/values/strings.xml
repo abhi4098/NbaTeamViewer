@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">NbaTeamsActivity</string>
+    <string name="lost">Lost :</string>
+    <string name="team_name">Team Name :</string>
+    <string name="won">Won :</string>
+    <string name="player_list">Player List</string>
+    <string name="player_name">First Name :</string>
+    <string name="last_name">Last Name :</string>
+    <string name="number">Number :</string>
+    <string name="splash_screen">Splash Screen</string>
+
+    <string name="sort_prompt">Choose a country</string>
+    <string name="sort_by">Sort By :</string>
+
+    <string-array name="sort_arrays">
+        <item>Name</item>
+        <item>Wins</item>
+        <item>Lost</item>
+
+    </string-array>
 </resources>
